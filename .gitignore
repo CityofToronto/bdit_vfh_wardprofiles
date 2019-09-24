@@ -1,0 +1,11 @@
+*.cfg
+settings.py
+
+# Pytest cache
+.pytest_cache/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.qgs~

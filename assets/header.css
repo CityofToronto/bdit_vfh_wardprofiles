@@ -1,0 +1,370 @@
+/* FOR PRINTING */
+@media print {
+  body {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+
+  #ward-dropdown, #dropdown-label {
+    display: none;
+  }
+
+  @page {
+    size: 8.5in 11in;
+    margin-left: .01cm;
+    margin-right: .01cm;
+  }
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 0px;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  color: #660159;
+}
+.subtitle {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.myH3 {
+  font-family: 'Libre Franklin Medium', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 2px;
+}
+.myH2 {
+  font-size: 1.5rem;
+  margin-top: 18px;
+  font-weight: bold;
+}
+.caption {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+tr, th, td {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  padding: 6px 11px;
+}
+/* --------------------------------------------FOR PRINTING------------------------------ */
+/* APP TITLE SECTION */
+#ward-title {
+  margin-top: 16px;
+}
+#map-icon {
+  width: 165px;
+  margin-left: -30px;
+  margin-right: 18px;
+  margin-top: -5px;
+}
+#dropdown-label {
+  margin-top: 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* WARD STATS SECTION */
+#row1-col1-title, #row1-col2-title {
+  margin-top: -11px;
+}
+.lines-div {
+  margin-left: -31px;
+}
+.stats-label {
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #660159;
+  font-weight: 600;
+}
+.stats-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* number line legend of first plot */
+#daily-trips-rank .traces:nth-child(1n) { /* 'other wards' */
+  transform: translate(-13px, 6px);
+}
+#daily-trips-rank .traces:nth-child(2n) {
+  transform: translate(90px, 6px);
+}
+/* number line circles and axis position of first plot */
+#daily-trips-rank .xlines-above, #daily-trips-rank .xaxislayer-above
+{
+  transform: translate(0px, -55px);
+}
+#daily-trips-rank .plot {
+  transform: translate(0px, 6px);
+}
+
+#dailytrip-title {
+    margin-left: 32px;
+    margin-top: -398px;
+    margin-bottom: 11px;
+}
+#dailytrip-value {
+  margin-top: -158px;
+  margin-left: 2px;
+}
+#daily-trips-rank {
+  margin-top: -10px;
+  margin-bottom: 17px;
+}
+#daily-trips-rank .gtitle {
+  transform: translate(-48px, 41px);
+}
+#daily-trips-rank .scatterpts {
+  stroke-width: 3px !important;
+}
+
+/* number line circles and axis position of remaining plots */
+#stats-pop .xlines-above, #stats-pop .xaxislayer-above
+{
+  transform: translate(0px, -49px);
+}
+#stats-pop .plot {
+  transform: translate(0px, 12px);
+}
+#stats-pop-density .xlines-above, #stats-pop-density .xaxislayer-above
+{
+  transform: translate(0px, -52px);
+}
+#stats-pop-density .plot {
+  transform: translate(0px, 9px);
+}
+#stats-pop-growth .xlines-above, #stats-pop-growth .xaxislayer-above
+{
+  transform: translate(0px, -52px);
+}
+#stats-pop-growth .plot {
+  transform: translate(0px, 9px);
+}
+
+#pop-title {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 69px;
+  margin-bottom: 0px;
+}
+#vkt-value {
+  position: absolute;
+  margin-top: 86px;
+}
+#stats-pop {
+  margin-top: -118px;
+  margin-bottom: -92px;
+}
+#stats-pop .gtitle {
+  transform: translate(-84px, 21px);
+}
+
+#popdensity-title {
+  margin-left: 32px;
+  margin-top: 185px;
+  margin-bottom: 0px;
+}
+#pop_val {
+  position: absolute;
+  margin-top: 191px;
+}
+#stats-pop-density .gtitle {
+  transform: translate(-25px, 21px);
+}
+#stats-pop-density {
+  margin-bottom: -95px;
+}
+
+#popgrowth-title {
+    margin-left: 32px;
+    margin-top: 81px;
+    margin-bottom: 0px;
+}
+#popdensity-value {
+  position: absolute;
+  margin-top: 296px;
+}
+#stats-pop-growth .gtitle {
+  transform: translate(-35px, 21px);
+}
+#stats-pop-growth {
+  margin-bottom: -95px;
+}
+
+#numberlines-caption {
+  font-family: 'Open Sans Condensed light', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* -------------------------------------------------------------------------- */
+/* TRIP ACTIVITY MAP SECTION */
+.tripmap-div {
+  margin-left: 31px;
+}
+#map-trips {
+  padding: 5px;
+  width: 550px;
+}
+#map-caption {
+  margin-top: -22px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* DAILY TRIP GROWTH SECTION */
+#growth-title, #dow-title {
+  margin-top: 10px;
+}
+
+#growth-bars {
+  margin-top: 5px;
+}
+#growth-bars .point path {
+  stroke: white !important;
+  stroke-width: 1px !important;
+}
+/* defaults: blue rgb(31, 119, 180), orange rgb(255, 127, 14) */
+#growth-bars .hoverlayer{
+    display: none;
+}
+#growth-bars .points .point:nth-child(1n) path {
+  fill: #660159 !important;
+}
+#growth-bars .points .point:nth-child(2n) path {
+  fill: #7f7e7e !important;
+}
+#growth-bars .xtick:nth-child(1n) text {
+  transform: translate(55px, 0);
+}
+#growth-bars .xtick:nth-child(2n) text {
+  transform: translate(173px, 0);
+}
+
+#growth-pc-ward {
+  /* position: absolute; */
+  margin-top: -18px;
+  margin-left: 34px;
+}
+#growth-pc-city {
+  /* position: absolute; */
+  margin-top: -22px;
+  margin-left: 141px;
+}
+.growth-barx1 {
+  font-size: 12px;
+  margin-left: 39px;
+}
+.growth-barx2 {
+  font-size: 12px;
+  margin-top: -20px;
+  margin-left: 139px;
+}
+.pc-div {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+}
+.growth-bar-footnote {
+  font-size: 11.3px;
+  margin-top: 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* TIME OF WEEK PROFILE SECTION */
+.zerolinelayer {
+  display: none;
+}
+#dow-timeseries {
+  margin-top: -10px;
+}
+.dow-label {
+  font-size: 12px;
+  margin-top: -34px;
+}
+#dow-hour {
+  margin-left: -10px;
+  margin-top: -40px;
+}
+#dow-mon {
+  margin-left: 68px;
+}
+#dow-tue {
+  margin-left: 81px;
+}
+#dow-wed {
+  margin-left: 95px;
+}
+#dow-thu {
+  margin-left: 107px;
+}
+#dow-fri {
+  margin-left: 128px;
+}
+#dow-sat {
+  margin-left: 141px;
+}
+#dow-sun {
+  margin-left: 153px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* TOP-5 LOCATIONS SECTION */
+#top5-table {
+  margin-top: 0px;
+}
+#top5-caption {
+  margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* BUSIEST HOUR SECTION */
+#daily-trips-title {
+  margin-top: 5px;
+}
+.busiest-subtitle {
+  position: absolute;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: -5px;
+  margin-bottom: 2px;
+}
+#total-trips {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 180px;
+  font-weight: 600;
+  color: #660159;
+}
+#top5-busiest-table {
+  margin-top: 10px;
+}
+
+#pie-fraction {
+  margin-top: 43px;
+}
+#busiest-obs-caption {
+  position: absolute;
+  margin-top: 15px;
+}
+
+/* Remove mode bar (that contains save button, etc.) */
+#daily-trips-rank .modebar, #stats-pop .modebar, #stats-pop-density .modebar,
+#stats-pop-growth .modebar, #growth-bars .modebar
+{ display: none !important; }
+
+/* Remove hover since there is no room to show it and it does not show the */
+/* number of the selected other ward */
+#daily-trips-rank .nsewdrag, #stats-pop .nsewdrag, #stats-pop-density .nsewdrag,
+#stats-pop-growth .nsewdrag, #growth-bars .nsewdrag
+{ display: none !important; }
+
+/* Hide little dash symbol on page */
+._dash-undo-redo {
+  display: none;
+}
