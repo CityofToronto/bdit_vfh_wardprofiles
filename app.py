@@ -124,6 +124,17 @@ maptext_dict = {
 # App code
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
+server = app.server
+
+# TODO: change this to the path where this will live on the EC2, this also
+# needs to detect if it's operated in Heroku
+# app.config.update({
+#          'requests_pathname_prefix': '/ward-profiles/',
+#  })
+
+# Something for heroku
+server.secret_key = os.environ.get('SECRET_KEY', 'my-secret-key')
+
 app.layout = html.Div([
     dbc.Row(
         [
